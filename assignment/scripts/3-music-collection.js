@@ -12,6 +12,22 @@ function addToCollection(title, artist, yearPublished)  {
     return album;
 } //end addToCollection
 
+function findByArtist(artist) {
+    let searchResults = [];
+    for(let i=0; i<collection.length; i++){
+        //console.log(collection[i].albumArtist + ' equals ' + artist +'?');
+        if(collection[i].albumArtist === artist){
+            searchResults.push(collection[i]);
+        }
+        // else{
+        //     //console.log('no search results:');
+        //     searchResults.length = 0;
+        // }
+    }
+    return searchResults;
+}// end findByArtist
+
+
 function showCollection(array)   {
     console.log('number of albums in my collection:', array.length);
     for(let i=0; i<array.length; i++){
@@ -29,3 +45,6 @@ console.log('add sixth album to collection', addToCollection('Aja', 'Steely Dan'
 console.log('My collection is:', collection);
 
 console.log(showCollection(collection));
+
+console.log('searching for Bloodnstuff', findByArtist('Bloodnstuff'));
+console.log('searching for Ludacris', findByArtist('Bloodnstuff'));
