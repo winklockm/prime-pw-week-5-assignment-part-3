@@ -12,6 +12,16 @@ function addToCollection(title, artist, yearPublished)  {
     return album;
 } //end addToCollection
 
+function showCollection(array)   {
+    // console.log('number of albums in my collection:', array.length);
+    // for(album of array){
+    //     console.log(array[i]);
+    // }
+    // for(let i=0; i<3; i++){
+    //     console.log(showCollection([0]))
+    // } //end loop
+} //end showCollection
+
 console.log('add first to collection', addToCollection('Is This It', 'The Strokes', 2001));
 console.log('add second album to collection', addToCollection('Bloodnstuff', 'Bloodnstuff', 2015));
 console.log('add third album to collection', addToCollection('Manipulator', 'Ty Segall', 2014));
