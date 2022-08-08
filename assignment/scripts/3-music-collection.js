@@ -13,14 +13,12 @@ function addToCollection(title, artist, yearPublished)  {
 } //end addToCollection
 
 function showCollection(array)   {
-    // console.log('number of albums in my collection:', array.length);
-    // for(album of array){
-    //     console.log(array[i]);
-    // }
-    // for(let i=0; i<3; i++){
-    //     console.log(showCollection([0]))
-    // } //end loop
+    console.log('number of albums in my collection:', array.length);
+    for(let i=0; i<array.length; i++){
+        console.log(array[i].albumTitle + ' by ' + array[i].albumArtist + ', published in', array[i].albumYearPublished);
+    }
 } //end showCollection
+
 
 console.log('add first to collection', addToCollection('Is This It', 'The Strokes', 2001));
 console.log('add second album to collection', addToCollection('Bloodnstuff', 'Bloodnstuff', 2015));
@@ -29,3 +27,5 @@ console.log('add fourth album to collection', addToCollection('Modern Country', 
 console.log('add fifth album to collection', addToCollection('Most Known Unknown', 'Three 6 Mafia', 2005));
 console.log('add sixth album to collection', addToCollection('Aja', 'Steely Dan', 1977));
 console.log('My collection is:', collection);
+
+console.log(showCollection(collection));
