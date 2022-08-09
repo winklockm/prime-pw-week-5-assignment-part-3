@@ -23,6 +23,18 @@ function findByArtist(artist) {
     return searchResults;
 }// end findByArtist
 
+// function search(artist, year)   {   *****<--not understanding the directions for this one
+//     let newArray = [];
+//     for(let i=0; i<collection.length; i++){
+//         if(artist === collection[i].albumArtist && year === collection[i].albumYearPublished){
+//             newArray.push(collection[i]);
+
+
+//         } //end if
+//     }
+// }
+
+
 function showCollection(array)   {
     console.log('number of albums in my collection:', array.length);
     for(let i=0; i<array.length; i++){
