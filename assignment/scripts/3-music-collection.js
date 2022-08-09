@@ -23,16 +23,18 @@ function findByArtist(artist) {
     return searchResults;
 }// end findByArtist
 
-// function search(artist, year)   {   *****<--not understanding the directions for this one
-//     let newArray = [];
-//     for(let i=0; i<collection.length; i++){
-//         if(artist === collection[i].albumArtist && year === collection[i].albumYearPublished){
-//             newArray.push(collection[i]);
+function search(criteria)   {
+    let matches = [];
+    console.log('in search function looking for', criteria.artist, 'and', criteria.year);
+    
+    for(let i=0; i<collection.length; i++){ //loops through
 
-
-//         } //end if
-//     }
-// }
+        if(criteria.artist === collection[i].albumArtist && criteria.year === collection[i].albumYearPublished){
+            matches.push(collection[i]); //add Ray Charles to matches array
+            console.log(matches);
+        } //end if
+    }
+}
 
 
 function showCollection(array)   {
@@ -55,3 +57,9 @@ console.log(showCollection(collection));
 console.log('search: Steely Dan', findByArtist('Steely Dan'));
 console.log('searching: Ludacris', findByArtist('Three 6 Mafia'));
 console.log('searching: William Tyler', findByArtist('William Tyler'));
+
+search({ artist: 'The Strokes', year: 2001 });
+search({ artist: 'The Strokes', year: 2011 });
+search({ artist: 'Ray Charles', year: 1957 });
+search({ artist: 'Steely Dan', year: 1977 });
+// search();
