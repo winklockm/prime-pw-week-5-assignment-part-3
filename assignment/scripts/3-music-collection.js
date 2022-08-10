@@ -47,6 +47,7 @@ function showCollection(array)   {
     }
 } //end showCollection
 
+console.log('****** TEST ADDTOCOLLECTION ******')
 console.log('add first to collection', addToCollection('Is This It', 'The Strokes', 2001));
 console.log('add second album to collection', addToCollection('Bloodnstuff', 'Bloodnstuff', 2015));
 console.log('add third album to collection', addToCollection('Manipulator', 'Ty Segall', 2014));
@@ -55,14 +56,15 @@ console.log('add fifth album to collection', addToCollection('Pretzel Logic', 'S
 console.log('add sixth album to collection', addToCollection('Aja', 'Steely Dan', 1977));
 console.log('My collection is:', collection);
 
+console.log('****** TEST SHOWCOLLECTION ******')
 console.log(showCollection(collection));
 
+console.log('****** TEST FINDBYARTIST ******')
 console.log('search: Steely Dan', findByArtist('Steely Dan'));
 console.log('searching: Ludacris', findByArtist('Three 6 Mafia'));
 console.log('searching: William Tyler', findByArtist('William Tyler'));
 
-
-console.log('**************** STRETCH GOALS*************')
+console.log('******** STRETCH GOALS*******')
 console.log('Matching album:', search({ artist: 'The Strokes', year: 2001 }));
 console.log('No match', search({ artist: 'The Strokes', year: 2011 }));
 console.log('No match', search({ artist: 'Ray Charles', year: 1957 }));
