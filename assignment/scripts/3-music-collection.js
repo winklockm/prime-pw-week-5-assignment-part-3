@@ -43,7 +43,7 @@ function search(criteria)   {
 function showCollection(array)   {
     console.log('number of albums in my collection:', array.length);
     for(let i=0; i<array.length; i++){
-        console.log(array[i].albumTitle + ' by ' + array[i].albumArtist + ', published in', array[i].albumYearPublished);
+        console.log(array[i].albumTitle + ' by ' + array[i].albumArtist + ', published in ' + array[i].albumYearPublished);
     }
 } //end showCollection
 
